@@ -29,7 +29,7 @@ import requests
 # Configuração inicial
 st.set_page_config(
     layout="wide",
-    page_title="Agente Social",
+    page_title="Agente Criação",
     page_icon="🤖"
 )
 
@@ -426,7 +426,7 @@ def get_current_squad():
 
 def login():
     """Formulário de login e cadastro"""
-    st.title("🔒 Agente Social - Login")
+    st.title("🔒 Agente Criação - Login")
     
     tab_login, tab_cadastro = st.tabs(["Login", "Cadastro"])
     
@@ -711,7 +711,7 @@ def construir_contexto(agente, segmentos_selecionados, historico_mensagens=None)
 # --- MODIFICAÇÃO: SELECTBOX PARA SELEÇÃO DE AGENTE ---
 def selecionar_agente_interface():
     """Interface para seleção de agente usando selectbox"""
-    st.title("🤖 Agente Social")
+    st.title("🤖 Agente Criação")
     
     # Carregar agentes disponíveis
     agentes = listar_agentes()
@@ -975,7 +975,7 @@ if st.sidebar.button("🔄 Trocar Agente", key="trocar_agente_global"):
     st.rerun()
 
 # --- SELECTBOX PARA TROCAR AGENTE ACIMA DAS ABAS ---
-st.title("🤖 Agente Social")
+st.title("🤖 Agente Criação")
 
 # Carregar agentes disponíveis
 agentes = listar_agentes()
